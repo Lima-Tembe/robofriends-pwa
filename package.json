@@ -2,24 +2,31 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aneagoie.github.io/robofriends-pwa",
   "dependencies": {
-    "gh-pages": "^1.1.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0",
-    "tachyons": "^4.9.0"
+    "redux-thunk": "^2.3.0",
+    "tachyons": "^4.10.0"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "jest": "jest --env=node --colors --coverage test",
+    "test": "npm run jest",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
+    "jest": "^23.1.0"
   }
 }
